@@ -1,0 +1,32 @@
+$gray: #dcdcdc;
+$dark-gray: #c8c8c8;
+
+.object-maker__controller-size {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.object-maker__controller-subtitle {
+  font-weight: normal;
+}
+
+.object-maker__controller-value {
+  border: 1px solid $gray;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.object-maker__controller-position_container {
+  margin: 10px 0;
+  padding: 10px 5px;
+  border: 1px solid $dark-gray;
+  border-radius: 5px;
+}
+
+.delete-model {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}

@@ -1,0 +1,39 @@
+$gray: #dcdcdc;
+$dark-gray: #c8c8c8;
+
+.object-maker {
+  display: flex;
+  height: 100%;
+  padding: 48px 0 0 0;
+}
+
+.object-maker__canvas {
+  flex-grow: 1;
+  padding: 30px;
+}
+
+.inputColor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.value {
+  width: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.object-maker__controllers {
+  display: flex;
+  flex-direction: column;
+}
+
+.object-maker__controller-container {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0 1px 10px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  min-width: 320px;
+  padding: 35px 20px;
+  overflow-y: auto;
+}
