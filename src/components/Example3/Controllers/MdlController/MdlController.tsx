@@ -10,6 +10,7 @@ import {
 } from '../../../../utils/Slider';
 
 import settingBar from '../../../../store/SettingBar';
+import canvasSettings from '../../../../store/CanvasSettings';
 import { Button, Typography } from '@material-ui/core';
 import MdlControllerProps from './MdlControllerProps';
 
@@ -17,7 +18,7 @@ const MdlController = observer((props: MdlControllerProps) => {
   const { modelId } = props;
   const model = useMemo(() => {
     return settingBar.models.find(model => model.modelId === modelId);
-  }, [modelId]);
+  }, [modelId, settingBar.models]);
 
   return model ? (
     <>
@@ -80,9 +81,14 @@ const MdlController = observer((props: MdlControllerProps) => {
         />
       </div>
       <div className="delete-model">
-        <Button variant="outlined" color="secondary" onClick={() => {
-          settingBar.deleteModel(modelId);
-        }}>
+        <Button
+          variant="outlined"
+          color="secondary"
+          onClick={() => {
+            settingBar.deleteModel(modelId);
+            canvasSettings.changeCurrentId('');
+          }}
+        >
           Delete model
         </Button>
       </div>

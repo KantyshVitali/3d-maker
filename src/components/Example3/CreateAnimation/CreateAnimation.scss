@@ -1,0 +1,30 @@
+.animation-creator {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  border: 1px solid #c1bdbd;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.frames {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.animation-creator-button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.font-big {
+  font-size: 24px;
+}
+
+.animation-creator__subtitle {
+  margin: 10px 0;
+}

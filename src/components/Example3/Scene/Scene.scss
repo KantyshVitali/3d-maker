@@ -7,11 +7,6 @@ $dark-gray: #c8c8c8;
   padding: 48px 0 0 0;
 }
 
-.object-maker__canvas {
-  flex-grow: 1;
-  padding: 30px;
-}
-
 .inputColor {
   display: flex;
   flex-direction: column;
@@ -36,4 +31,15 @@ $dark-gray: #c8c8c8;
   min-width: 320px;
   padding: 35px 20px;
   overflow-y: auto;
+}
+
+.object-maker__canvas {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.canvas {
+  padding: 30px;
+  flex-grow: 1;
 }
